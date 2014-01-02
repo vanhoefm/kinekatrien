@@ -1,27 +1,39 @@
-body {
-	background: #f0f0f0;
+html {
+	background: #eaeaea;
+	height: 100%;
 }
 
 header {
+	max-width: 865px;
+	margin-left:auto;
+	margin-right:auto;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	
-	background: #f0f0f0;
+	padding-bottom: 30px;
 }
 
 #logo {
 	float: left;
+	line-height: 40px;
+	text-align: center;
+	
+	font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #444444;
+	
+	text-decoration: none;
+}
+
+#logo:hover {
+	color: black;
 }
 
 nav {
-	width: auto;
-	margin-left:auto;
-	margin-right:auto;
 }
 
 nav ul {
 	list-style-type: none;
-	float: left;
+	float: right;
 	
 	border-radius: 100px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.07);
@@ -87,9 +99,17 @@ nav a:hover, nav li.current a {
 }
 
 .content {
-	width: 80%;
+	max-width: 865px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+	max-width: 100%;
 }
 
 /*
