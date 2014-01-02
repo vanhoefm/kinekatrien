@@ -1,41 +1,53 @@
-body {
-	background: #f0f0f0;
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ---------------------------------------------------------------------- */
+/* HTML5/CSS3 Gray Navigation Menu 
+/* ----------------------------------------------------------------------
+Version: 1.0
+Author: Ixtendo
+Author URI: http://www.ixtendo.com
+License: MIT License
+License URI: http://www.opensource.org/licenses/mit-license.php
+------------------------------------------------------------------------- */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;	
 }
 
-header {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	
-	background: #f0f0f0;
+ul {
+	list-style: none;	
 }
 
-#logo {
+#navigation {
+	margin: 40px 0;	
+	font: bold 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #444;
+}
+
+#navigation:after {
+	clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#navigation ul {	
 	float: left;
-}
-
-nav {
-	width: auto;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-nav ul {
-	list-style-type: none;
-	float: left;
-	
 	border-radius: 100px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.07);
 	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.07);
     overflow: hidden;
 }
 
-nav ul li {
+#navigation li {
 	float: left;
-	
-	font: bold 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
-	color: #444;
-	
 	border-style: solid; 
 	border-width: 1px;
     border-color: #BABABA #BABABA #BABABA #FFF;
@@ -48,10 +60,10 @@ nav ul li {
 	background: -o-linear-gradient(top, #F7F7F7 0%,#EDEDED 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #F7F7F7 0%,#EDEDED 100%); /* IE10+ */
 	background: linear-gradient(top, #F7F7F7 0%,#EDEDED 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F7F7F7', endColorstr='#EDEDED',GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F7F7F7', endColorstr='#EDEDED',GradientType=0 ); /* IE6-9 */	
 }
 
-nav li:hover, nav li.current {
+#navigation li:hover, #navigation li.current {
 	box-shadow: 0 1px rgba(255,255,255,0.2) inset;
 	-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
 	border-color: #262626 !important;
@@ -65,7 +77,7 @@ nav li:hover, nav li.current {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4D4D4D', endColorstr='#262626',GradientType=0 ); /* IE6-9 */
 }
 
-nav a {
+#navigation a {
 	display: block;
 	padding: 10px 15px;
 	color: #444;
@@ -73,27 +85,16 @@ nav a {
 	text-shadow: 0 1px #FFF;
 }
 
-nav a:hover, nav li.current a {
+#navigation a:hover, #navigation li.current a {
 	color: #FFF;
 	text-shadow: 0 1px #000;
 }
 
-#menu-icon {
-	display: none;
+#navigation li:first-child {
+	border-left-color: #BABABA;
+	border-radius: 100px 0 0 100px;
 }
 
-.clear {
-	clear: both;
+#navigation li:last-child {
+	border-radius: 0 100px 100px 0;
 }
-
-.content {
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-/*
-* {
-	border: solid black 1px;
-}
-*/

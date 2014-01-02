@@ -1,0 +1,6 @@
+Options -Indexes
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST}  ^kine-katrien.be [nocase]
+RewriteRule ^(.*)         http://www.kine-katrien.be/$1 [last,redirect=301]
