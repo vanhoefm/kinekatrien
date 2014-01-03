@@ -107,6 +107,7 @@ nav a:hover, nav li.current a {
 	max-width: 865px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-bottom: 50px;
 }
 
 .center {
@@ -167,6 +168,25 @@ table {
 }
 td {
 	padding: 5px 15px 5px 5px;
+}
+
+.specialisatielijst {
+	max-width: 590px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.specialisatie h2 {
+	padding-bottom: 5px;
+}
+
+.specialisatie ul {
+	padding: 0 40px 0;
+	list-style: disc outside none;
+	margin-bottom: 30px;
+}
+.specialisatie li {
+	list-style: disc outside none;
 }
 
 /*
