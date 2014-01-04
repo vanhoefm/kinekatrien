@@ -375,7 +375,8 @@ svg:not(:root) {
 /* =Links
 -------------------------------------------------------------- */
 a {
-	color: #0066cc;
+	/*color: #0066cc;*/
+	color: #dc4444;
 	font-weight: 400;
 	text-decoration: none;
 }
@@ -1163,6 +1164,10 @@ form div {
 #specialisaties ul li a {
 	display: inline;
 	text-decoration: none;
+}
+
+#specialisaties .specialisatie-title {
+	color: #dc4444;
 }
 
 /* =Titles
