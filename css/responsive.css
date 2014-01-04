@@ -901,7 +901,7 @@ form div {
 	text-align: center;
 }
 
-#openingsuren table {
+#openingsuren .tablecontainer {
 	max-width: 380px;
 	margin: 0 auto;
 }
