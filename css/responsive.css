@@ -1020,7 +1020,9 @@ form div {
 }
 
 /** support for flexslider */
-#widgets .flexslider ul {
+#widgets .flexslider ul,
+#widgets .flexslider li,
+#widgets .flexslider ol {
 	padding: 0px;
 }
 
