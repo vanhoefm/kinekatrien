@@ -25,9 +25,25 @@
 
 	<link rel='stylesheet' id='responsive-style-css'  href='css/responsive.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='responsive-media-queries-css'  href='css/responsivemedia.css' type='text/css' media='all' />
-	<script type='text/javascript' src='js/jquery.min.js'></script>
+	<link rel="stylesheet" id='flexslider-css' href="css/flexslider.css" type="text/css">
+	
+	<script type='text/javascript' src="js/jquery.min.js"></script>
 	<script type='text/javascript' src='js/jquery-migrate.min.js?'></script>
 	<script type='text/javascript' src='js/responsive-modernizr.min.js'></script>
+	<script type='text/javascript' src="js/jquery.flexslider.min.js"></script>
+		
+	<!-- start the slider -->
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+		$('.flexslider').flexslider({
+			slideshowSpeed: 7000,
+			animationSpeed: 1500,
+			useCSS: true,
+			prevText: "Vorige",
+			nextText: "Volgende"});
+	  });
+	</script>
+
 <!-- We need this for debugging -->
 <!-- Responsive 1.9.4.2 -->
 </head>
@@ -66,17 +82,10 @@
 				3950 Bocholt<br />
 				<a href="mailto:info@kine-katrien.be">info@kine-katrien.be</a>
 			</p>
-			<!--
-			<div class="call-to-action">
-				<a href="" class="blue button">Call to Action</a>
-			</div>--><!-- end of .call-to-action -->
 		</div>
 		<!-- end of .col-460 -->
 
 		<div id="featured-image" class="grid col-460 fit">
-			<!--
-			<p><img class="aligncenter" src="http://wp-themes.com/wp-content/themes/responsive/core/images/featured-image.png" width="440" height="300" alt="" /></p>
-			-->
 			<div id="googlemaps" class="aligncenter" style="max-width: 425px;">
 				<iframe width="425" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.be/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=damburgstraat+61,+3950+Bocholt,+belgie&amp;aq=&amp;sll=51.16963,5.577278&amp;sspn=0.008866,0.022724&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Damburgstraat+61,+3950+Bocholt,+Limburg,+Vlaams+Gewest&amp;ll=51.171191,5.578136&amp;spn=0.009418,0.018239&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br />
 				<small><a href="https://maps.google.be/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=damburgstraat+61,+3950+Bocholt,+belgie&amp;aq=&amp;sll=51.16963,5.577278&amp;sspn=0.008866,0.022724&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Damburgstraat+61,+3950+Bocholt,+Limburg,+Vlaams+Gewest&amp;ll=51.171191,5.578136&amp;spn=0.009418,0.018239&amp;z=15&amp;iwloc=A" style="text-align:left">Grotere kaart weergeven</a></small>
@@ -90,7 +99,7 @@
 		<div id="home_widget_1" class="grid col-460">
 			<div class="widget-wrapper">
 				<div class="widget-title-home"><h3>De praktijk bevindt zich in de lokalen van het huisartsenhuis.</h3></div>
-				<div class="textwidget" style="text-align: center;">
+				<div class="imagewidget">
 					<img src="images/gebouw.jpeg" alt="Gebouw van de praktijk" />
 				</div>
 			</div><!-- end of .widget-wrapper -->	
@@ -99,24 +108,17 @@
 
 		<div id="home_widget_2" class="grid col-460 fit">
 			<div class="widget-wrapper">
-				<div class="widget-title-home"><h3>Praktijk</h3></div>
-				<div class="textwidget">
-				Foto van de praktijk binnen.
+				<div class="widget-title-home"><h3>De praktijk</h3></div>
+				
+				<div class="flexslider">
+					<ul class="slides">
+						<li><img src="images/praktijk1.jpeg" /></li>
+						<li><img src="images/praktijk2.jpeg" /></li>
+					</ul>
 				</div>
+				
 			</div><!-- end of .widget-wrapper -->
 		</div>
-		<!-- end of .col-460 -->
-
-		<!--
-		<div id="home_widget_3" class="grid col-460 fit">
-			<div class="widget-wrapper">
-				<div class="widget-title-home"><h3>Nog Info</h3></div>
-				<div class="textwidget">
-				bla blalbalakk asd dsaf  f  e a ds fas df a sd sad f asd fasdfsadf sa dadsfasd f d a ds fsasdfadsf dsa fdadsfdasdf.
-				</div>
-			</div>--><!-- end of .widget-wrapper -->
-		<!--</div>-->
-		
 		<!-- end of .col-460 fit -->
 		
 	</div><!-- end of #widgets -->
