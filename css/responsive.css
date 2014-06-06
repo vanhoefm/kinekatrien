@@ -894,12 +894,29 @@ form div {
 	width: 99.893617021277%;
 }
 
-#openingsuren p {
+#openingsuren  h2 {
 	font-size: 18px;
 	font-weight: 200;
 	line-height: 27px;
-	padding: 0 40px 0 40px;
+	padding: 15px 40px 0 40px;
 	text-align: center;
+}
+
+#openingsuren  h3 {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 27px;
+	padding: 20px 40px 0 40px;
+	text-align: center;
+}
+
+#openingsuren #notes {
+	font-weight: 200;
+	line-height: 27px;
+	padding: 0 40px 0 40px;
+	/*text-align: center;*/
+	margin: 0px auto;
+	max-width: 480px;
 }
 
 #openingsuren .tablecontainer {
