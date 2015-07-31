@@ -913,10 +913,25 @@ form div {
 #openingsuren #notes {
 	font-weight: 200;
 	line-height: 27px;
-	padding: 0 40px 0 40px;
+	padding: 0 20px 0 20px;
 	/*text-align: center;*/
 	margin: 0px auto;
 	max-width: 480px;
+}
+
+#openingsuren #verlof {
+	font-weight: 200;
+	line-height: 27px;
+	/*padding: 0 40px 0 40px;*/
+	/*text-align: center;*/
+	margin: 0px auto;
+	max-width: 520px;
+}
+
+#verlof h3 {
+	font-weight: 700;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 #openingsuren .tablecontainer {
